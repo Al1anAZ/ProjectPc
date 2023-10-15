@@ -1,0 +1,12 @@
+.Button{
+    cursor: pointer;
+    background: transparent;
+    color: $Black;
+    max-width:  170px;
+    height: 55px;
+    border: $Black 1px solid ;
+    border-radius: 5px;
+    font: {
+        family: $MainFont400W;
+    };
+}

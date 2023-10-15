@@ -1,1 +1,51 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Geometria", sans-serif;
+  font-weight: 400;
+}
+
+.Button {
+  cursor: pointer;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  max-width: 170px;
+  height: 55px;
+  border: rgb(0, 0, 0) 1px solid;
+  border-radius: 5px;
+  font-family: "Geometria", sans-serif;
+}
+
+header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+}
+header img {
+  float: left;
+  margin-left: 135px;
+  margin-right: 25px;
+}
+
+.NavBar {
+  display: inline;
+  max-width: 407px;
+  list-style: none;
+  padding: 0;
+}
+.NavBar :last-child {
+  margin-right: 0;
+}
+.NavBar > li {
+  float: left;
+  margin-right: 20px;
+}
+.NavBar a {
+  color: rgb(101, 101, 101);
+  text-decoration: none;
+}
+.NavBar a[data-selected=selected] {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}/*# sourceMappingURL=main.css.map */

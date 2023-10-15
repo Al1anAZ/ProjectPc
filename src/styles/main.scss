@@ -1,0 +1,16 @@
+$MainFont400W: 'Geometria', sans-serif;
+$Black60: rgba(101, 101, 101, 1);
+$Black: rgba(0, 0, 0, 1);
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font: {
+        family: $MainFont400W;
+        weight: 400;
+    }
+
+}
+
+@import "./components/Button";
+@import "./components/Header";
