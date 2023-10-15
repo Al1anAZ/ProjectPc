@@ -1,7 +1,9 @@
-header{
+.Header{
+    top: 0;
     position: fixed;
     height: 80px;
     width: 100%;
+    max-width: 1440px;
     img{
         float: left;
         margin: {
@@ -28,7 +30,7 @@ header{
         color:  $Black60;
         text-decoration: none;
     }
-    a[data-selected="selected"]{
+      a:hover {
         color: $Black;
         font: {
             weight:600;

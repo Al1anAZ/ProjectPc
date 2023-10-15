@@ -10,7 +10,7 @@ function Logo(){
 
 function Header(){
     return(
-        <header>
+        <div className="Header">
           <Logo/>
           <NavBar 
            style={{
@@ -41,7 +41,7 @@ function Header(){
           }}
            text={"Log in"}
           />
-        </header>
+        </div>
     );
 }
 
