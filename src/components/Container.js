@@ -1,7 +1,7 @@
 function Container({children}){
     return(
-        <div className="Container">
-         {children}
+          <div>
+           {children}
         </div>
     );
 }

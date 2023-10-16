@@ -1,39 +1,60 @@
 .Header{
-    top: 0;
-    position: fixed;
+    // top: 0;
+    // position: fixed;
     height: 80px;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1170px;
     img{
         float: left;
         margin: {
-           left: 135px;
            right: 25px;
         }
     }
 }
-
 .NavBar{
     display: inline;
-    max-width: 407px;
     list-style: none;
     padding: 0;
     :last-child{
         margin-right: 0;
     }
-    >li{
-
-        float: left;
-        margin-right: 20px;
+    &[data-nav="header"]{
+        max-width: 407px;
+        >li{
+            margin-top: 26px;
+            float: left;
+            margin-right: 20px;
+        }
+        a{
+            font-size: 20px;
+            color:  $Black60;
+            text-decoration: none;
+        }
+          a:hover {
+            color: $Black;
+            font: {
+                weight:600;
+            }
+        }
     }
-    a{
-        color:  $Black60;
-        text-decoration: none;
-    }
-      a:hover {
-        color: $Black;
-        font: {
-            weight:600;
+    &[data-nav="footer"]{
+        max-width: '100%';
+        margin-top: 55px;
+        float: right;
+        >li{
+            float: left;
+            margin-right: 20px;
+        }
+        a{
+            font-size: 14px;
+            color:  $Black60;
+            text-decoration: none;
+        }
+          a:hover {
+            color: $Black;
+            font: {
+                weight:600;
+            }
         }
     }
 }

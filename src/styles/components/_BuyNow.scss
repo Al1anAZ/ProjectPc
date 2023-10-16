@@ -1,0 +1,30 @@
+.BuyNow{
+    height: 400px;
+    hr{
+        max-width: 70px;
+        margin: 0;
+    }
+}
+.TextBox{
+    max-width:  500px;
+    margin: 0;
+    display: inline-block;
+    h1{
+        
+        font: {
+            size: 54px;
+            weight:700;
+        }
+    }
+    p{
+        max-width: 469px;
+        font-size: 18px;
+        color: $Black60;
+    }
+}
+.ImgBox{
+    float: right;
+    img{
+        width: 100%;
+    }
+}

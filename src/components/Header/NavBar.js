@@ -1,9 +1,9 @@
-function NavBar({style,menu,listyle}){
+function NavBar({navtype,menu}){
    const list = menu.map(text=>
-      <li style={listyle}><a href="#">{text}</a></li>
+      <li><a href="#">{text}</a></li>
       );
    return(
-     <ul style={style} className="NavBar">
+     <ul data-nav={navtype} className="NavBar">
        {list}
      </ul>
    );

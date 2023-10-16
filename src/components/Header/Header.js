@@ -1,9 +1,9 @@
 import LogoImg from "../../imgs/Logo.svg"
 import NavBar from "./NavBar"
 import Button from "../Button";
-function Logo(){
+function Logo({height = 80,width = 70}){
     return(
-      <img src={LogoImg} alt="ProjectPcLogo" />
+      <img src={LogoImg} alt="ProjectPcLogo" width={width} height={height}/>
     );
 }
 
@@ -13,19 +13,13 @@ function Header(){
         <div className="Header">
           <Logo/>
           <NavBar 
-           style={{
-            fontSize: 20,
-           }}
+           navtype="header"
            menu={[`Home`,`Builder`,`Assemblies`,`Contact`]}
-           listyle={{
-            marginTop: 26
-           }}
           />
          <Button
           style={{fontSize: 18,
             width: 100,
             height: 43,
-            marginRight: 135,
             marginTop: 19,
             float: "right"
           }}
@@ -46,5 +40,5 @@ function Header(){
 }
 
 
-
+export {Logo} 
 export default Header

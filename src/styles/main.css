@@ -6,12 +6,15 @@ body {
   font-weight: 400;
 }
 
-.Container {
+.Resolution1440 {
   margin: auto;
   max-width: 1440px;
-  height: 10000px;
-  border-left: 1px solid rgb(0, 0, 0);
-  border-right: 1px solid rgb(0, 0, 0);
+  height: 1000px;
+}
+.Resolution1440 > div {
+  margin: auto;
+  max-width: 1170px;
+  height: 100%;
 }
 
 .Button {
@@ -26,36 +29,106 @@ body {
 }
 
 .Header {
-  top: 0;
-  position: fixed;
   height: 80px;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1170px;
 }
 .Header img {
   float: left;
-  margin-left: 135px;
   margin-right: 25px;
 }
 
 .NavBar {
   display: inline;
-  max-width: 407px;
   list-style: none;
   padding: 0;
 }
 .NavBar :last-child {
   margin-right: 0;
 }
-.NavBar > li {
+.NavBar[data-nav=header] {
+  max-width: 407px;
+}
+.NavBar[data-nav=header] > li {
+  margin-top: 26px;
   float: left;
   margin-right: 20px;
 }
-.NavBar a {
+.NavBar[data-nav=header] a {
+  font-size: 20px;
   color: rgb(101, 101, 101);
   text-decoration: none;
 }
-.NavBar a:hover {
+.NavBar[data-nav=header] a:hover {
   color: rgb(0, 0, 0);
   font-weight: 600;
+}
+.NavBar[data-nav=footer] {
+  max-width: "100%";
+  margin-top: 55px;
+  float: right;
+}
+.NavBar[data-nav=footer] > li {
+  float: left;
+  margin-right: 20px;
+}
+.NavBar[data-nav=footer] a {
+  font-size: 14px;
+  color: rgb(101, 101, 101);
+  text-decoration: none;
+}
+.NavBar[data-nav=footer] a:hover {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+footer {
+  max-width: 1440px;
+  height: 132px;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+.FooterContainer {
+  margin: auto;
+  max-width: 1170px;
+  height: 132px;
+}
+
+.FooterContent {
+  padding-top: 25px;
+  height: 70px;
+}
+.FooterContent > span {
+  margin-left: 35px;
+  font-size: 14px;
+}
+
+.BuyNow {
+  height: 400px;
+}
+.BuyNow hr {
+  max-width: 70px;
+  margin: 0;
+}
+
+.TextBox {
+  max-width: 500px;
+  margin: 0;
+  display: inline-block;
+}
+.TextBox h1 {
+  font-size: 54px;
+  font-weight: 700;
+}
+.TextBox p {
+  max-width: 469px;
+  font-size: 18px;
+  color: rgb(101, 101, 101);
+}
+
+.ImgBox {
+  float: right;
+}
+.ImgBox img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

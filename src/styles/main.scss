@@ -11,14 +11,17 @@ body{
     }
 
 }
-.Container{
+.Resolution1440{
     margin: auto;
     max-width: 1440px;
-    height: 10000px;
-    border: {
-        left: 1px solid $Black;
-        right: 1px solid $Black;
+    height: 1000px;
+    >div{
+        margin: auto;
+        max-width: 1170px;
+        height: 100%;
     }
 }
 @import "./components/Button";
 @import "./components/Header";
+@import "./components/Footer";
+@import "./components/BuyNow"
