@@ -210,4 +210,29 @@ footer {
 .OptionBox:hover {
   background: gray;
   border-radius: 10px;
+}
+
+.OurAssemblies > h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.ComputersContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ComputerBox {
+  max-width: 370px;
+  margin: auto;
+}
+.ComputerBox h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.ComputerBox p {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  color: rgb(101, 101, 101);
 }/*# sourceMappingURL=main.css.map */

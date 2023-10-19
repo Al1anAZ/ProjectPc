@@ -3,7 +3,7 @@ import Button from "../Button";
 import Container from "../Container";
 function BuyNow(){
   return(
-     <section className="BuyNow">
+     <Container classstyle="BuyNow">
          <Container classstyle="BuyNowTextBox">
          <Container style={{width: 70,
             borderBottom: "1px solid black"}}></Container>
@@ -20,7 +20,7 @@ function BuyNow(){
          <Container classstyle="ImgBox">
          <img src={Img}/>
          </Container>
-     </section>
+     </Container>
   );
 }
 export default BuyNow

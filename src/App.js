@@ -4,9 +4,9 @@ import Footer from "./components/Footer/Footer";
 import Body from "./components/Body/Body";
 import BuyNow from "./components/Body/BuyNow";
 import PcBuilder from "./components/Body/Pcbuilder";
+import OurAssemblies from "./components/Body/OurAssemblies";
 
 
-//Переписать, вместо дивов Container.js
 function App() {
   return (
     <Container classstyle="Resolution1440">
@@ -15,6 +15,7 @@ function App() {
                   <Body>
                    <BuyNow/>
                    <PcBuilder/>
+                   <OurAssemblies/>
                   </Body>
       </Container>
          <Footer/>
