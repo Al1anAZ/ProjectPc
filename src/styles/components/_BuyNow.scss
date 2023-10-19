@@ -1,4 +1,5 @@
 .BuyNow{
+   margin-top: 170px;
    display: flex;
    flex-direction:row;
    flex-wrap: wrap;
@@ -16,8 +17,8 @@
         margin-bottom: 0;
         font: {
             size: 54px;
-            weight:700;
         }
+        line-height: normal;
     }
     p{
         max-width: 469px;

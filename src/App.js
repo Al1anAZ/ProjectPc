@@ -5,7 +5,8 @@ import Body from "./components/Body/Body";
 import BuyNow from "./components/Body/BuyNow";
 import PcBuilder from "./components/Body/Pcbuilder";
 import OurAssemblies from "./components/Body/OurAssemblies";
-
+import Advantages from "./components/Body/Advantages";
+import SpecialOffer from "./components/Body/SpecialOffer";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
                    <BuyNow/>
                    <PcBuilder/>
                    <OurAssemblies/>
+                   <Advantages/>
+                   <SpecialOffer/>
                   </Body>
       </Container>
          <Footer/>
