@@ -1,6 +1,7 @@
 import LogoImg from "../../imgs/Logo.svg"
 import NavBar from "./NavBar"
 import Button from "../Button";
+import Container from "../Container";
 function Logo({height = 80,width = 70}){
     return(
       <img src={LogoImg} alt="ProjectPcLogo" width={width} height={height}/>
@@ -10,7 +11,7 @@ function Logo({height = 80,width = 70}){
 
 function Header(){
     return(
-        <div className="Header">
+        <Container classstyle="Header">
           <Logo/>
           <NavBar 
            navtype="header"
@@ -35,7 +36,7 @@ function Header(){
           }}
            text={"Log in"}
           />
-        </div>
+        </Container>
     );
 }
 

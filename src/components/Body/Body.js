@@ -1,8 +1,9 @@
+import Container from "../Container";
 function Body({children}){
     return(
-        <div style={{marginTop: 70}}>
+        <Container style={{marginTop: 70}}>
             {children}
-        </div>
+        </Container>
     );
 }
 export default Body

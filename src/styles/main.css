@@ -9,7 +9,6 @@ body {
 .Resolution1440 {
   margin: auto;
   max-width: 1440px;
-  height: 1000px;
 }
 .Resolution1440 > div {
   margin: auto;
@@ -104,31 +103,111 @@ footer {
 }
 
 .BuyNow {
-  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .BuyNow hr {
   max-width: 70px;
   margin: 0;
 }
 
-.TextBox {
+.BuyNowTextBox {
+  display: flex;
+  flex-direction: column;
   max-width: 500px;
   margin: 0;
-  display: inline-block;
 }
-.TextBox h1 {
+.BuyNowTextBox h1 {
+  margin-bottom: 0;
   font-size: 54px;
   font-weight: 700;
 }
-.TextBox p {
+.BuyNowTextBox p {
   max-width: 469px;
   font-size: 18px;
   color: rgb(101, 101, 101);
 }
 
 .ImgBox {
-  float: right;
+  max-width: 670px;
 }
 .ImgBox img {
   width: 100%;
+}
+
+.Pcbuilder {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.PcbuilderTextBox h1 {
+  margin: 0;
+  font-size: 36px;
+}
+.PcbuilderTextBox p {
+  font-size: 18px;
+  color: rgb(101, 101, 101);
+}
+
+.SelectsBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.CustomSelectBox {
+  margin: auto;
+  margin-bottom: 30px;
+  width: 530px;
+  background-color: rgb(217, 217, 217);
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.CustomSelectBox:focus {
+  border: 2px solid black;
+}
+
+.SelectsButtonsBox {
+  display: flex;
+  justify-content: end;
+}
+
+.CustomSelect {
+  height: 65px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(217, 217, 217);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "Geometria", sans-serif;
+}
+
+.CustomSelectOptions {
+  cursor: pointer;
+  overflow-y: scroll;
+  max-width: 530px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-top: 2px solid black;
+}
+.CustomSelectOptions::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+  background-color: black;
+}
+.CustomSelectOptions::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 1px;
+}
+
+.OptionBox {
+  padding-left: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.OptionBox:hover {
+  background: gray;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */

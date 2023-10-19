@@ -1,23 +1,25 @@
 import Img from "../../imgs/Img.svg"
 import Button from "../Button";
+import Container from "../Container";
 function BuyNow(){
   return(
      <section className="BuyNow">
-         <hr/>
-         <div className="TextBox">
+         <Container classstyle="BuyNowTextBox">
+         <Container style={{width: 70,
+            borderBottom: "1px solid black"}}></Container>
              <h1>Powerful, stylish, innovative!</h1>
              <p>Already assembled and cool PC setup that will allow you to play anything in ultra quality!</p>
              <Button
                text={"Buy now"}
                style={buttonstyle}
              />
-                      <div style={{width: 270,
-            height: 60, 
-            borderBottom: "1px solid black"}}></div>
-         </div>
-         <span className="ImgBox">
+            <Container style={{width: 270,
+            height: 80, 
+            borderBottom: "1px solid black"}}></Container>
+         </Container>
+         <Container classstyle="ImgBox">
          <img src={Img}/>
-         </span>
+         </Container>
      </section>
   );
 }

@@ -1,16 +1,19 @@
 .BuyNow{
-    height: 400px;
+   display: flex;
+   flex-direction:row;
+   flex-wrap: wrap;
     hr{
         max-width: 70px;
         margin: 0;
     }
 }
-.TextBox{
+.BuyNowTextBox{
+    display: flex;
+    flex-direction:column;
     max-width:  500px;
     margin: 0;
-    display: inline-block;
     h1{
-        
+        margin-bottom: 0;
         font: {
             size: 54px;
             weight:700;
@@ -23,7 +26,8 @@
     }
 }
 .ImgBox{
-    float: right;
+    max-width: 670px;
+    
     img{
         width: 100%;
     }

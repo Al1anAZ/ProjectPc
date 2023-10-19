@@ -1,8 +1,8 @@
-function Container({children}){
+function Container({children,classstyle,style,tIndex}){
     return(
-          <div>
+          <div className={classstyle} style={style} tabIndex={tIndex}>
            {children}
-        </div>
+          </div>
     );
 }
 export default Container

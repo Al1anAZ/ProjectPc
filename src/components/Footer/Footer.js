@@ -1,11 +1,11 @@
-import FooterContainer from "./FooterContainer";
+import Container from "../Container";
 import { Logo } from "../Header/Header";
 import NavBar from "../Header/NavBar";
 function Footer(){
   return(
     <footer>
-         <FooterContainer>
-           <div className="FooterContent">
+         <Container classstyle="FooterContainer">
+           <Container classstyle="FooterContent">
              <Logo
             height={70}
              />
@@ -14,8 +14,8 @@ function Footer(){
              navtype= "footer"
              menu={['Privacy Policy','Terms & Conditions','Cookie Policy','Contact']}
              />
-           </div>
-        </FooterContainer>
+           </Container>
+        </Container>
     </footer>
   );
 }

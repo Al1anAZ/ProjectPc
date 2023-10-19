@@ -1,6 +1,7 @@
 $MainFont400W: 'Geometria', sans-serif;
 $Black60: rgba(101, 101, 101, 1);
 $Black: rgba(0, 0, 0, 1);
+$Gray:  rgba(217, 217, 217, 1);
 body{
     margin: 0;
     padding: 0;
@@ -14,7 +15,6 @@ body{
 .Resolution1440{
     margin: auto;
     max-width: 1440px;
-    height: 1000px;
     >div{
         margin: auto;
         max-width: 1170px;
@@ -24,4 +24,5 @@ body{
 @import "./components/Button";
 @import "./components/Header";
 @import "./components/Footer";
-@import "./components/BuyNow"
+@import "./components/BuyNow";
+@import "./components/Pcbuilder";

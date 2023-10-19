@@ -3,17 +3,22 @@ import Container from "./components/Container";
 import Footer from "./components/Footer/Footer";
 import Body from "./components/Body/Body";
 import BuyNow from "./components/Body/BuyNow";
+import PcBuilder from "./components/Body/Pcbuilder";
+
+
+//Переписать, вместо дивов Container.js
 function App() {
   return (
-    <div className="Resolution1440">
+    <Container classstyle="Resolution1440">
       <Container>
            <Header/>
                   <Body>
                    <BuyNow/>
+                   <PcBuilder/>
                   </Body>
       </Container>
          <Footer/>
-      </div>
+      </Container>
   );
 }
 

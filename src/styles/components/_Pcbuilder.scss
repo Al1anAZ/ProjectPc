@@ -1,0 +1,76 @@
+.Pcbuilder{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.PcbuilderTextBox{
+    h1{
+        margin:  0;
+        font-size: 36px;
+    }
+    p{
+        font-size: 18px;
+        color: $Black60;
+    }
+}
+.SelectsBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.CustomSelectBox{
+   margin: auto;
+   margin-bottom: 30px;
+   width: 530px;
+   background-color:$Gray;
+   border-radius: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+   &:focus{
+    border: 2px solid black;
+   }
+}
+.SelectsButtonsBox{
+    display: flex;
+    justify-content: end;
+}
+.CustomSelect{
+    height:  65px;
+    color: $Black;
+    background-color:$Gray;
+    border: none;
+    outline: none;
+    font: {
+        size: 18px;
+        family: $MainFont400W;
+    }
+
+}
+.CustomSelectOptions{
+    cursor: pointer;
+    overflow-y: scroll;
+    max-width: 530px;
+    height: 100px;
+    margin-bottom: 10px;
+    border: {
+        top: 2px solid black;
+    }
+    &::-webkit-scrollbar{
+        width: 5px;
+        border-radius: 10px;
+        background-color: black;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: white;
+        border-radius: 1px;
+    }
+}
+.OptionBox{
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    &:hover{
+        background: gray;
+        border-radius: 10px;
+    }
+}
+
