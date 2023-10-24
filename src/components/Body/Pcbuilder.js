@@ -23,9 +23,9 @@ function PcBuilder(){
     updatePc(draft=>{draft[name] = value})
   }
   useEffect(()=>{
-  const allSelected = Object.values(pc).every(value=>value !== '')
+   const allSelected = Object.values(pc).every(value=>value)
    setActivesubmit(allSelected)
-},[pc])
+  },[pc])
 
    return(
     <Container classstyle="Pcbuilder">
