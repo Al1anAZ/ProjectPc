@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/projectpc/static/css/main.d1d9219e.css",
+    "main.js": "/projectpc/static/js/main.ca65e037.js",
+    "static/media/Logo.svg": "/projectpc/static/media/Logo.d374a4d266029c790c83643fd8b46def.svg",
+    "static/media/Img.svg": "/projectpc/static/media/Img.ffefc0961d02a9bcb7227ae14b22aea0.svg",
+    "static/media/arrow-right.svg": "/projectpc/static/media/arrow-right.6632487c7beab97b252dec238fabb7a9.svg",
+    "static/media/arrow-up.svg": "/projectpc/static/media/arrow-up.d9437b1c5713f7d39251e96c3362543b.svg",
+    "static/media/arrow-down.svg": "/projectpc/static/media/arrow-down.bad4781f3b5e2056ab7e3fe4a4c62e2b.svg",
+    "index.html": "/projectpc/index.html",
+    "static/media/Scrollbar.svg": "/projectpc/static/media/Scrollbar.4fef135d37b104186150.svg",
+    "static/media/Thumb.svg": "/projectpc/static/media/Thumb.306dbb75e9aadba1dc20.svg",
+    "static/media/Ellipse 1.svg": "/projectpc/static/media/Ellipse 1.3c7b93a129142afae6b769b807e253a8.svg",
+    "static/media/ComputerAva.svg": "/projectpc/static/media/ComputerAva.d48ea22b827119b963797b7509acf1c9.svg",
+    "main.d1d9219e.css.map": "/projectpc/static/css/main.d1d9219e.css.map",
+    "main.ca65e037.js.map": "/projectpc/static/js/main.ca65e037.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1d9219e.css",
+    "static/js/main.ca65e037.js"
+  ]
+}
