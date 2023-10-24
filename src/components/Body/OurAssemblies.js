@@ -1,5 +1,5 @@
-import Button from "../Button"
-import Container from "../Container"
+import Button from "../UI/Button";
+import Container from "../UI/Container";
 import ComputerAva from "../../imgs/ComputerAva.svg"
 import ArrowRight from "../../imgs/arrow-right.svg"
 
@@ -8,7 +8,7 @@ function Computer({name, discription}){
     return(
        <Container classstyle="ComputerBox">
         <img src={ComputerAva}/>
-         <h1>{name}</h1>
+         <h3>{name}</h3>
          <p>{discription}</p>
          <Button
            text="More"

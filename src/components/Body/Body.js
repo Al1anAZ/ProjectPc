@@ -1,4 +1,4 @@
-import Container from "../Container";
+import Container from "../UI/Container";
 function Body({children}){
     return(
         <Container style={{marginTop: 70}}>

@@ -3,8 +3,21 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   font-family: "Geometria", sans-serif;
-  font-weight: 400;
+}
+body h1 {
+  font-size: 54px;
+}
+body h2 {
+  font-size: 36px;
+}
+body h3 {
+  font-size: 24px;
+}
+body p {
+  color: rgb(101, 101, 101);
+  font-size: 18px;
   line-height: 27px;
+  font-weight: 400;
 }
 
 .Resolution1440 {
@@ -24,8 +37,46 @@ body {
   max-width: 170px;
   height: 55px;
   border: rgb(0, 0, 0) 1px solid;
-  border-radius: 5px;
+  border-radius: 10px;
   font-family: "Geometria", sans-serif;
+}
+.Button.Buy:hover {
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+.Button.Buy:active {
+  max-width: 160px;
+  height: 52px;
+}
+.Button.SingLog {
+  font-size: 18px;
+  height: 43px;
+  width: 100px;
+  margin-top: 19px;
+  float: right;
+}
+.Button.SingLog:hover {
+  background: rgb(0, 0, 0);
+  color: white;
+}
+.Button.SingLog:active {
+  max-width: 90px;
+  height: 38px;
+}
+.Button.NextStep {
+  cursor: not-allowed;
+  width: 170px;
+  font-size: 18px;
+  border: 1px solid rgb(154, 154, 154);
+  color: rgb(154, 154, 154);
+}
+.Button.NextStep.active {
+  cursor: pointer;
+  border: none;
+  background: rgb(0, 0, 0);
+  color: white;
+}
+.Button.NextStep.active:hover {
+  box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
 .Header {
@@ -126,13 +177,9 @@ footer {
 }
 .BuyNowTextBox h1 {
   margin-bottom: 0;
-  font-size: 54px;
-  line-height: normal;
 }
 .BuyNowTextBox p {
   max-width: 469px;
-  font-size: 18px;
-  color: rgb(101, 101, 101);
 }
 
 .ImgBox {
@@ -148,13 +195,13 @@ footer {
   flex-wrap: wrap;
 }
 
-.PcbuilderTextBox h1 {
+.PcbuilderTextBox h2 {
   margin: 0;
-  font-size: 36px;
 }
 .PcbuilderTextBox p {
-  font-size: 18px;
-  color: rgb(101, 101, 101);
+  margin-top: 5px;
+  margin-bottom: 30px;
+  max-width: 469px;
 }
 
 .SelectsBox {
@@ -162,17 +209,19 @@ footer {
   flex-wrap: wrap;
 }
 
-.CustomSelectBox {
+.CustomSelectContainer {
   margin: auto;
+  border: 1px solid rgb(101, 101, 101);
+  border-radius: 10px;
   margin-bottom: 30px;
+}
+
+.CustomSelectBox {
   width: 530px;
-  background-color: rgb(217, 217, 217);
+  background-color: white;
   border-radius: 10px;
   padding-left: 20px;
   padding-right: 20px;
-}
-.CustomSelectBox:focus {
-  border: 2px solid black;
 }
 
 .SelectsButtonsBox {
@@ -183,7 +232,7 @@ footer {
 .CustomSelect {
   height: 65px;
   color: rgb(0, 0, 0);
-  background-color: rgb(217, 217, 217);
+  background-color: white;
   border: none;
   outline: none;
   font-size: 18px;
@@ -191,35 +240,78 @@ footer {
 }
 
 .CustomSelectOptions {
+  width: 570px;
+  height: 285px;
+  margin-top: -8px;
+  padding-top: 22px;
+}
+.CustomSelectOptions > div {
+  margin: auto;
   cursor: pointer;
   overflow-y: scroll;
-  max-width: 530px;
-  height: 100px;
-  margin-bottom: 10px;
-  border-top: 2px solid black;
+  height: 250px;
+  width: 530px;
 }
-.CustomSelectOptions::-webkit-scrollbar {
-  width: 5px;
-  border-radius: 10px;
-  background-color: black;
+.CustomSelectOptions > div::-webkit-scrollbar {
+  width: 21px;
+  background: url("../imgs/Scrollbar.svg") no-repeat center;
 }
-.CustomSelectOptions::-webkit-scrollbar-thumb {
-  background: white;
-  border-radius: 1px;
+.CustomSelectOptions > div::-webkit-scrollbar-thumb {
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid rgb(101, 101, 101);
+  background-color: white;
+  background-image: url("../imgs/Thumb.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .OptionBox {
   padding-left: 5px;
   margin-top: 10px;
-  margin-right: 10px;
 }
-.OptionBox:hover {
-  background: gray;
-  border-radius: 10px;
+.OptionBox p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: normal;
+}
+.OptionBox:hover p {
+  color: rgb(0, 0, 0);
+}
+.OptionBox:hover span {
+  border-bottom: 1px solid;
+  -o-border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0)) 1;
+     border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0)) 1;
 }
 
-.OurAssemblies > h1 {
+.CustomSelectBox.opened {
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.CustomSelectContainer.opened {
+  border: none;
+}
+
+.CustomSelectContainer.opened .CustomSelectOptions {
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  border-top: none;
+  border-right: 1px solid rgb(154, 154, 154);
+  border-left: 1px solid rgb(154, 154, 154);
+  border-bottom: 1px solid rgb(154, 154, 154);
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.OurAssemblies {
   margin-top: 60px;
+}
+.OurAssemblies > h1 {
+  margin-top: 0px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 36px;
@@ -234,18 +326,16 @@ footer {
   max-width: 370px;
   margin: auto;
 }
-.ComputerBox h1 {
-  font-size: 24px;
+.ComputerBox h3 {
+  margin-top: 15px;
   margin-bottom: 5px;
 }
 .ComputerBox p {
   margin: 0;
   line-height: 30px;
-  font-size: 18px;
-  color: rgb(101, 101, 101);
 }
 
-.Advantages > h1 {
+.Advantages > h2 {
   margin-top: 60px;
   margin-bottom: 30px;
   text-align: center;
@@ -261,10 +351,6 @@ footer {
   margin: auto;
   max-width: 370px;
 }
-.AdvantageBox p {
-  color: rgb(101, 101, 101);
-  font-size: 18px;
-}
 
 .SpecialOffer {
   margin-top: 90px;
@@ -277,9 +363,8 @@ footer {
   width: 500px;
   text-align: end;
 }
-.SpecialOfferBox h1 {
+.SpecialOfferBox h2 {
   margin-top: 55px;
-  font-size: 36px;
 }
 .SpecialOfferBox p {
   margin-top: 65px;

@@ -1,6 +1,7 @@
 $MainFont400W: 'Geometria', sans-serif;
 $Black60: rgba(101, 101, 101, 1);
 $Black: rgba(0, 0, 0, 1);
+$Black40: rgba(154, 154, 154, 1);
 $Gray:  rgba(217, 217, 217, 1);
 body{
     margin: 0;
@@ -8,10 +9,22 @@ body{
     scroll-behavior: smooth;
     font: {
         family: $MainFont400W;
-        weight: 400;
-
     }
-    line-height: 27px;
+    h1{
+        font-size: 54px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    h3{
+        font-size:  24px;
+    }
+    p{
+        color: $Black60;
+        font-size:  18px;
+        line-height: 27px;
+        font-weight: 400;
+    }
 
 }
 .Resolution1440{

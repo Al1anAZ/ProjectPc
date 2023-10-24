@@ -1,9 +1,12 @@
-import Container from "../Container"
-import Button from "../Button"
+import Container from "../UI/Container";
+import Button from "../UI/Button";
 import Img from "../../imgs/Img.svg"
-function Timer({time}){
+import { useState } from "react"
+
+function Timer(){
+   const [time, setTime] = useState(new Date)
     return(
-      <p>{time}</p>
+      <p>{time.toLocaleTimeString()}</p>
     );
 }
 
@@ -14,12 +17,12 @@ function SpecialOffer(){
        <img src={Img}/>
       </Container>
       <Container classstyle="SpecialOfferBox">
-        <h1>Special offer</h1>
+        <h2>Special offer</h2>
          <Timer
-         time = "10:10:05"
          />
         <Button text="Buy now"
          style={buttonstyle}
+         classstyle="Buy"
         />
       </Container>
     </Container>

@@ -1,4 +1,4 @@
-import Container from "../Container";
+import Container from "../UI/Container";
 import { Logo } from "../Header/Header";
 import NavBar from "../Header/NavBar";
 function Footer(){
@@ -12,7 +12,7 @@ function Footer(){
              <span>© 2023 PCBOYARE. All rights reserved.</span>
              <NavBar
              navtype= "footer"
-             menu={['Privacy Policy','Terms & Conditions','Cookie Policy','Contact']}
+             menu={[{id: 0, title: 'Privacy Policy'},{id: 1, title: 'Terms & Conditions'},{id: 2, title: 'Cookie Policy'},{id: 3, title: 'Contact'}]}
              />
            </Container>
         </Container>

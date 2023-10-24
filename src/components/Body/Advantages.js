@@ -1,11 +1,11 @@
-import Container from "../Container"
+import Container from "../UI/Container";
 import Ellipse from "../../imgs/Ellipse 1.svg"
 
 function Advantage({title,discription}){
   return(
     <Container  classstyle="AdvantageBox">
       <img src={Ellipse}/>
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       <p>{discription}</p>
     </Container>
   );
@@ -14,7 +14,7 @@ function Advantage({title,discription}){
 function Advantages(){
  return(
     <Container classstyle="Advantages">
-            <h1>Our Advantages</h1>
+            <h2>Our Advantages</h2>
        <Container classstyle="AdvantagesContainer">
         <Advantage
            title="Quality service"

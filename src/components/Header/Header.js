@@ -1,7 +1,7 @@
 import LogoImg from "../../imgs/Logo.svg"
 import NavBar from "./NavBar"
-import Button from "../Button";
-import Container from "../Container";
+import Button from "../UI/Button";
+import Container from "../UI/Container";
 function Logo({height = 80,width = 70}){
     return(
       <img src={LogoImg} alt="ProjectPcLogo" width={width} height={height}/>
@@ -15,25 +15,15 @@ function Header(){
           <Logo/>
           <NavBar 
            navtype="header"
-           menu={[`Home`,`Builder`,`Assemblies`,`Contact`]}
+           menu={[{id: 0, title: 'Home'},{id: 1, title: 'Builder'},{id: 2, title: 'Assemblies'},{id: 3, title: 'Contact'}]}
           />
          <Button
-          style={{fontSize: 18,
-            width: 100,
-            height: 43,
-            marginTop: 19,
-            float: "right"
-          }}
+         classstyle="SingLog"
            text={"Sing in"}
           />
-          <Button 
-          style={{fontSize: 18,
-             width: 100,
-             height: 43,
-             marginTop: 19,
-             border: 'none',
-             float: "right"
-          }}
+          <Button
+          classstyle="SingLog"
+           style={{border: "none"}}
            text={"Log in"}
           />
         </Container>
