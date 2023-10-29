@@ -1,0 +1,123 @@
+.Pcbuilder{
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.PcbuilderTextBox{
+    h2{
+        margin:  0;
+    }
+    p{
+        margin: {
+              top: 5px;
+              bottom: 30px;
+        } 
+        max-width: 469px;
+    }
+}
+.SelectsBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.CustomSelectContainer{
+    margin: auto;
+    border: 1px solid $Black60;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.CustomSelectBox{
+   width: 530px;
+   background-color: white;
+   border-radius: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+.SelectsButtonsBox{
+    display: flex;
+    justify-content: end;
+}
+.CustomSelect{
+    height:  65px;
+    color: $Black;
+    background-color: white;
+    border: none;
+    outline: none;
+    font: {
+        size: 18px;
+        family: $MainFont400W;
+    }
+
+}
+.CustomSelectOptions{
+   width: 570px;
+   height: 285px;
+   margin: {
+       top: -8px;
+    }
+   padding: {
+    top: 22px;
+   };
+   >div{
+    margin: auto;
+    cursor: pointer;
+    overflow-y: scroll;
+    height: 250px;
+    width: 530px;
+    &::-webkit-scrollbar{
+        width: 21px;
+        background: url("../imgs/Scrollbar.svg") no-repeat center;
+    }
+    &::-webkit-scrollbar-thumb{
+        width: 100px;
+        border-radius: 5px;
+        border:  1px solid $Black60;
+        background-color: white; 
+        background-image: url("../imgs/Thumb.svg"); 
+        background-position: center;
+        background-repeat: no-repeat; 
+    }
+   }
+}
+.OptionBox{
+    padding-left: 5px;
+    margin-top: 10px;
+    p{
+        margin: {
+            top: 0;
+            bottom: 20px 
+        };
+        line-height: normal;
+    }
+    &:hover{
+       p{
+        color: $Black;
+       }
+       span{
+        border-bottom: 1px solid;
+        border-image: linear-gradient(to right, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 1),rgba(0, 0, 0, 0)) 1;
+       }
+    }
+}
+.CustomSelectBox.opened{
+    position: relative;
+    z-index: 2;
+    border: 1px solid $Black;
+}
+.CustomSelectContainer.opened{
+    border: none;
+} 
+.CustomSelectContainer.opened .CustomSelectOptions {
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    border: {
+        top: none;
+        right: 1px solid $Black40;
+        left: 1px solid  $Black40;
+        bottom: 1px solid  $Black40;
+        radius: 10px
+       }
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+

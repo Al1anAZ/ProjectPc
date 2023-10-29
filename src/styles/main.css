@@ -1,0 +1,375 @@
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Geometria", sans-serif;
+}
+body h1 {
+  font-size: 54px;
+}
+body h2 {
+  font-size: 36px;
+}
+body h3 {
+  font-size: 24px;
+}
+body p {
+  color: rgb(101, 101, 101);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.Resolution1440 {
+  margin: auto;
+  max-width: 1440px;
+}
+.Resolution1440 > div {
+  margin: auto;
+  max-width: 1170px;
+  height: 100%;
+}
+
+.Button {
+  cursor: pointer;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  max-width: 170px;
+  height: 55px;
+  border: rgb(0, 0, 0) 1px solid;
+  border-radius: 10px;
+  font-family: "Geometria", sans-serif;
+}
+.Button.Buy:hover {
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+.Button.Buy:active {
+  max-width: 160px;
+  height: 52px;
+}
+.Button.SingLog {
+  font-size: 18px;
+  height: 43px;
+  width: 100px;
+  margin-top: 19px;
+  float: right;
+}
+.Button.SingLog:hover {
+  background: rgb(0, 0, 0);
+  color: white;
+}
+.Button.SingLog:active {
+  max-width: 90px;
+  height: 38px;
+}
+.Button.NextStep {
+  cursor: not-allowed;
+  width: 170px;
+  font-size: 18px;
+  border: 1px solid rgb(154, 154, 154);
+  color: rgb(154, 154, 154);
+}
+.Button.NextStep.active {
+  cursor: pointer;
+  border: none;
+  background: rgb(0, 0, 0);
+  color: white;
+}
+.Button.NextStep.active:hover {
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+.Header {
+  z-index: 1;
+  background-color: white;
+  top: 0;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  max-width: 1170px;
+}
+.Header img {
+  float: left;
+  margin-right: 25px;
+}
+
+.NavBar {
+  display: inline;
+  list-style: none;
+  padding: 0;
+}
+.NavBar :last-child {
+  margin-right: 0;
+}
+.NavBar[data-nav=header] {
+  max-width: 407px;
+}
+.NavBar[data-nav=header] > li {
+  margin-top: 26px;
+  float: left;
+  margin-right: 20px;
+}
+.NavBar[data-nav=header] a {
+  font-size: 20px;
+  color: rgb(101, 101, 101);
+  text-decoration: none;
+}
+.NavBar[data-nav=header] a:hover {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+.NavBar[data-nav=footer] {
+  max-width: "100%";
+  margin-top: 55px;
+  float: right;
+}
+.NavBar[data-nav=footer] > li {
+  float: left;
+  margin-right: 20px;
+}
+.NavBar[data-nav=footer] a {
+  font-size: 14px;
+  color: rgb(101, 101, 101);
+  text-decoration: none;
+}
+.NavBar[data-nav=footer] a:hover {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+footer {
+  max-width: 1440px;
+  height: 132px;
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+.FooterContainer {
+  margin: auto;
+  max-width: 1170px;
+  height: 132px;
+}
+
+.FooterContent {
+  padding-top: 25px;
+  height: 70px;
+}
+.FooterContent > span {
+  margin-left: 35px;
+  font-size: 14px;
+}
+
+.BuyNow {
+  margin-top: 170px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.BuyNow hr {
+  max-width: 70px;
+  margin: 0;
+}
+
+.BuyNowTextBox {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0;
+}
+.BuyNowTextBox h1 {
+  margin-bottom: 0;
+}
+.BuyNowTextBox p {
+  max-width: 469px;
+}
+
+.ImgBox {
+  max-width: 670px;
+}
+.ImgBox img {
+  width: 100%;
+}
+
+.Pcbuilder {
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.PcbuilderTextBox h2 {
+  margin: 0;
+}
+.PcbuilderTextBox p {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  max-width: 469px;
+}
+
+.SelectsBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.CustomSelectContainer {
+  margin: auto;
+  border: 1px solid rgb(101, 101, 101);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.CustomSelectBox {
+  width: 530px;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.SelectsButtonsBox {
+  display: flex;
+  justify-content: end;
+}
+
+.CustomSelect {
+  height: 65px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "Geometria", sans-serif;
+}
+
+.CustomSelectOptions {
+  width: 570px;
+  height: 285px;
+  margin-top: -8px;
+  padding-top: 22px;
+}
+.CustomSelectOptions > div {
+  margin: auto;
+  cursor: pointer;
+  overflow-y: scroll;
+  height: 250px;
+  width: 530px;
+}
+.CustomSelectOptions > div::-webkit-scrollbar {
+  width: 21px;
+  background: url("../imgs/Scrollbar.svg") no-repeat center;
+}
+.CustomSelectOptions > div::-webkit-scrollbar-thumb {
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid rgb(101, 101, 101);
+  background-color: white;
+  background-image: url("../imgs/Thumb.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.OptionBox {
+  padding-left: 5px;
+  margin-top: 10px;
+}
+.OptionBox p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: normal;
+}
+.OptionBox:hover p {
+  color: rgb(0, 0, 0);
+}
+.OptionBox:hover span {
+  border-bottom: 1px solid;
+  -o-border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0)) 1;
+     border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0)) 1;
+}
+
+.CustomSelectBox.opened {
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.CustomSelectContainer.opened {
+  border: none;
+}
+
+.CustomSelectContainer.opened .CustomSelectOptions {
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  border-top: none;
+  border-right: 1px solid rgb(154, 154, 154);
+  border-left: 1px solid rgb(154, 154, 154);
+  border-bottom: 1px solid rgb(154, 154, 154);
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.OurAssemblies {
+  margin-top: 60px;
+}
+.OurAssemblies > h1 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.ComputersContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ComputerBox {
+  max-width: 370px;
+  margin: auto;
+}
+.ComputerBox h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.ComputerBox p {
+  margin: 0;
+  line-height: 30px;
+}
+
+.Advantages > h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.AdvantagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.AdvantageBox {
+  text-align: center;
+  margin: auto;
+  max-width: 370px;
+}
+
+.SpecialOffer {
+  margin-top: 90px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.SpecialOfferBox {
+  width: 500px;
+  text-align: end;
+}
+.SpecialOfferBox h2 {
+  margin-top: 55px;
+}
+.SpecialOfferBox p {
+  margin-top: 65px;
+  margin-bottom: 75px;
+  font-size: 100px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}/*# sourceMappingURL=main.css.map */

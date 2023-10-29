@@ -1,0 +1,18 @@
+.Advantages{
+   >h2{
+    margin: {
+        top: 60px;
+        bottom: 30px;
+    }
+    text-align: center;
+   }
+}
+.AdvantagesContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.AdvantageBox{
+    text-align: center;
+    margin: auto;
+    max-width: 370px;
+}

@@ -1,0 +1,29 @@
+.BuyNow{
+   margin-top: 170px;
+   display: flex;
+   flex-direction:row;
+   flex-wrap: wrap;
+    hr{
+        max-width: 70px;
+        margin: 0;
+    }
+}
+.BuyNowTextBox{
+    display: flex;
+    flex-direction:column;
+    max-width:  500px;
+    margin: 0;
+    h1{
+        margin-bottom: 0;
+    }
+    p{
+        max-width: 469px;
+    }
+}
+.ImgBox{
+    max-width: 670px;
+    
+    img{
+        width: 100%;
+    }
+}

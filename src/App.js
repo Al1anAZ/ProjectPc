@@ -1,22 +1,28 @@
+import Header from "./components/Header/Header";
+import Container from "./components/UI/Container";
+import Footer from "./components/Footer/Footer";
+import Body from "./components/Body/Body";
+import BuyNow from "./components/Body/BuyNow";
+import PcBuilder from "./components/Body/Pcbuilder";
+import OurAssemblies from "./components/Body/OurAssemblies";
+import Advantages from "./components/Body/Advantages";
+import SpecialOffer from "./components/Body/SpecialOffer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container classstyle="Resolution1440">
+      <Container>
+           <Header/>
+                  <Body>
+                   <BuyNow/>
+                   <PcBuilder/>
+                   <OurAssemblies/>
+                   <Advantages/>
+                   <SpecialOffer/>
+                  </Body>
+      </Container>
+         <Footer/>
+      </Container>
   );
 }
 

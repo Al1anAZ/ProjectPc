@@ -1,0 +1,46 @@
+$MainFont400W: 'Geometria', sans-serif;
+$Black60: rgba(101, 101, 101, 1);
+$Black: rgba(0, 0, 0, 1);
+$Black40: rgba(154, 154, 154, 1);
+$Gray:  rgba(217, 217, 217, 1);
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font: {
+        family: $MainFont400W;
+    }
+    h1{
+        font-size: 54px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    h3{
+        font-size:  24px;
+    }
+    p{
+        color: $Black60;
+        font-size:  18px;
+        line-height: 27px;
+        font-weight: 400;
+    }
+
+}
+.Resolution1440{
+    margin: auto;
+    max-width: 1440px;
+    >div{
+        margin: auto;
+        max-width: 1170px;
+        height: 100%;
+    }
+}
+@import "./components/Button";
+@import "./components/Header";
+@import "./components/Footer";
+@import "./components/BuyNow";
+@import "./components/Pcbuilder";
+@import "./components/OurAssemblies";
+@import "./components/Advantages";
+@import "./components/SpecialOffer";

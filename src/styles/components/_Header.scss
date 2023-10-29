@@ -1,0 +1,62 @@
+.Header{
+    z-index: 1;
+    background-color: white;
+    top: 0;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    max-width: 1170px;
+    img{
+        float: left;
+        margin: {
+           right: 25px;
+        }
+    }
+}
+.NavBar{
+    display: inline;
+    list-style: none;
+    padding: 0;
+    :last-child{
+        margin-right: 0;
+    }
+    &[data-nav="header"]{
+        max-width: 407px;
+        >li{
+            margin-top: 26px;
+            float: left;
+            margin-right: 20px;
+        }
+        a{
+            font-size: 20px;
+            color:  $Black60;
+            text-decoration: none;
+        }
+          a:hover {
+            color: $Black;
+            font: {
+                weight:600;
+            }
+        }
+    }
+    &[data-nav="footer"]{
+        max-width: '100%';
+        margin-top: 55px;
+        float: right;
+        >li{
+            float: left;
+            margin-right: 20px;
+        }
+        a{
+            font-size: 14px;
+            color:  $Black60;
+            text-decoration: none;
+        }
+          a:hover {
+            color: $Black;
+            font: {
+                weight:600;
+            }
+        }
+    }
+}

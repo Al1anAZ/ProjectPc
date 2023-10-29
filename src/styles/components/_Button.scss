@@ -1,0 +1,50 @@
+.Button{
+    cursor: pointer;
+    background: transparent;
+    color: $Black;
+    max-width:  170px;
+    height: 55px;
+    border: $Black 1px solid ;
+    border-radius: 10px;
+    font: {
+        family: $MainFont400W;
+    };
+    &.Buy:hover{
+        box-shadow: 0 0 15px $Black;
+    }
+    &.Buy:active{
+        max-width:  160px;
+        height: 52px;
+    }
+    &.SingLog{
+        font-size: 18px;
+        height: 43px;
+        width: 100px;
+        margin-top: 19px;
+        float: right;
+    }
+    &.SingLog:hover{
+        background: $Black;
+        color:  white;
+    }
+    &.SingLog:active{
+       max-width: 90px;
+       height: 38px;
+    }
+    &.NextStep{
+       cursor:not-allowed;
+       width: 170px;
+       font-size: 18px;
+       border: 1px solid $Black40;
+       color: $Black40;
+    }
+    &.NextStep.active{
+        cursor: pointer;
+        border: none;
+        background:  $Black;
+        color: white;
+    }
+    &.NextStep.active:hover{
+        box-shadow: 0 0 15px $Black;
+    }
+}
